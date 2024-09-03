@@ -1,0 +1,49 @@
+@media all and (min-width: 768px) {
+    .data{
+        color: black;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex: 1;
+        font-family: "Tomorrow", sans-serif;
+    
+    }
+    
+    .flexbox{
+        display:flex;
+        border: 10px;
+        flex-wrap: wrap;
+    }
+    
+    body{
+        background-color: rgba(133, 133, 133, 0.408);
+    }
+    
+}
+
+@media all and (max-width: 768px) {
+    .data{
+        color: black;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+        display: flexbox;
+        flex: 1;
+        font-family: "Tomorrow", sans-serif;
+    
+    }
+    
+    .flexbox{
+        display:flexbox;
+        border: 10px;
+        flex-wrap: wrap;
+    }
+    
+    body{
+        background-color: rgba(133, 133, 133, 0.408);
+    }
+    
+}
+
+
