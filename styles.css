@@ -1,4 +1,8 @@
-@media all and (min-width: 768px) {
+body{
+    background-color: rgba(133, 133, 133, 0.408);
+}
+
+@media all and (min-width: 768px) { /* This part of the stylesheet only activates for desktop users. */
     .data{
         color: black;
         border: 2px solid black;
@@ -15,14 +19,11 @@
         border: 10px;
         flex-wrap: wrap;
     }
-    
-    body{
-        background-color: rgba(133, 133, 133, 0.408);
-    }
+
     
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 768px) { /* This is for the mobile interface, which only activates for devices with smaller screens*/
     .data{
         color: black;
         border: 2px solid black;
@@ -34,15 +35,14 @@
     
     }
     
+
+    
     .flexbox{
         display:flexbox;
         border: 10px;
         flex-wrap: wrap;
     }
     
-    body{
-        background-color: rgba(133, 133, 133, 0.408);
-    }
     
 }
 
