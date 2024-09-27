@@ -1,49 +1,62 @@
-body{
+/*I have went with a mobile first CSS stylesheet, since all of the adjustments for desktop can be done minimally.*/
+body {
     background-color: rgba(133, 133, 133, 0.408);
 }
 
-@media all and (min-width: 768px) { /* This part of the stylesheet only activates for desktop users. */
-    .data{
-        color: black;
-        border: 2px solid black;
-        margin: 20px;
-        padding: 20px;
+/* Data containers*/
+.data {
+    color: black;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    flex: 1;
+    font-family: "Tomorrow", sans-serif;
+    /*display:flexbox;*/
+}
+
+.flexbox {
+    border: 10px;
+    flex-wrap: wrap;
+    /*display:flexbox;*/
+}
+
+/* Borders*/
+hr {
+    opacity: 0;
+    width: 4%;
+}
+
+/*button links*/
+a:link {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-style: outset;
+    border-color: black;
+
+}
+
+a:active {
+    border-color: purple;
+    color: purple;
+}
+
+/* Desktop media query thingiemajig*/
+@media all and (min-width: 768px) and (orientation:landscape) {
+
+    /* This part of the stylesheet only activates for desktop users. */
+    .data {
         display: flex;
-        flex: 1;
-        font-family: "Tomorrow", sans-serif;
-    
-    }
-    
-    .flexbox{
-        display:flex;
-        border: 10px;
-        flex-wrap: wrap;
     }
 
-    
+    .flexbox {
+        display: flex;
+    }
+
+    hr {
+        width: 30px;
+    }
 }
-
-@media all and (max-width: 768px) { /* This is for the mobile interface, which only activates for devices with smaller screens*/
-    .data{
-        color: black;
-        border: 2px solid black;
-        margin: 20px;
-        padding: 20px;
-        display: flexbox;
-        flex: 1;
-        font-family: "Tomorrow", sans-serif;
-    
-    }
-    
-
-    
-    .flexbox{
-        display:flexbox;
-        border: 10px;
-        flex-wrap: wrap;
-    }
-    
-    
-}
-
-

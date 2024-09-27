@@ -8,35 +8,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <noscript>Your Browser seems to not support Javascript. Enable Javascript or update your browser.</noscript>
   <title>CO2 Statistics</title>
 </head>
 
 <body>
-  <div class="data" id="status">
-    <h2><strong>Current Status:</strong> Fetching data... </h2>
-  </div>
-  <div class="flexbox">
-
-    <div class="data" id="extendedStatistics">
-      <a href="./extended data.html"><h3>Extended Statistics</h3></a>
-      
-      
+  <header>
+    <div class="data" id="status">
+      <h2><strong>Current Status:</strong> Fetching data... </h2>
+      <noscript>
+        <h1>Your Browser seems to not support Javascript. Enable Javascript or update your browser.</h1>
+      </noscript>
     </div>
+  </header>
+  <main>
+    <div class="flexbox">
 
-    <div class="data" id="currentIndex">
-      <!-- Data will be displayed here -->
+      <div class="data" id="extendedStatistics">
+        <a href="./extended data.html">
+          <h3>Extended Statistics</h3>
+        </a>
+      </div>
+
+      <div class="data" id="currentIndex">
+        <!-- Data will be displayed here -->
+      </div>
+
+      <div class="data" id="dominantPollutant">
+        <!-- Data will be displayed here -->
+      </div>
+
+
     </div>
-
-    <div class="data" id="dominantPollutant">
-      <!-- Data will be displayed here -->
+  </main>
+  <footer>
+    <div class="data" id="footer">
     </div>
-
-
-  </div>
-  <div class="data" id ="footer">
-    
-  </div>
+  </footer>
 </body>
 
 </html>

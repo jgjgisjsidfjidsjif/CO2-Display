@@ -3,37 +3,39 @@
 
 <head>
   <meta charset="UTF-8">
-
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script>
-<!--<script src="https://www.gstatic.com/charts/loader.js"></script> -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script>
   <script src="script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <noscript>Your Browser seems to not support Javascript. Enable Javascript or update your browser.</noscript>
   <title>CO2 Statistics</title>
 </head>
 
 <body>
-  <div class="data" id="status">
-    <h2><strong>Current Status:</strong> Fetching data... </h2>
-  </div>
-  <div class="flexbox">
-
-    <div class="data" id="index">
-      <a href="./"><h3>Back to the homepage</h3></a>
-      
+  <header>
+    <div class="data" id="status">
+      <h2><strong>Current Status:</strong> Fetching data... </h2>
+      <noscript>
+        <h1>Your Browser seems to not support Javascript. Enable Javascript or update your browser.</h1>
+      </noscript>
     </div>
+  </header>
+  <main>
+    <div class="flexbox">
 
-    <div class="data" id="aqiGraph">
-    </div>
+      <div class="data" id="aqiGraph">
+      </div>
 
-    <div class="data" id="pm10Graph">
+      <div class="data" id="pm10Graph">
+      </div>
     </div>
-  </div>
-  <div class="data" id ="footer">
+  </main>
+  <footer>
+    <div class="data" id="footer">
+    </div>
+  </footer>
 </body>
 
 </html>
